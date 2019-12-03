@@ -2,10 +2,8 @@ package org;
 
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.DocumentReference;
-// [START fs_include_dependencies]
 import com.google.cloud.firestore.Firestore;
 import com.google.cloud.firestore.FirestoreOptions;
-// [END fs_include_dependencies]
 import com.google.cloud.firestore.QueryDocumentSnapshot;
 import com.google.cloud.firestore.QuerySnapshot;
 import com.google.cloud.firestore.WriteResult;
@@ -39,6 +37,13 @@ public class App {
             System.err.println(e);
         }
         
+        // check if collections contain documentId
+        // get collections.document all key-value pairs
+        // get collections.document.key -> value
+        // upsert collections.document key-value    
+        // delete collections.document key
+        // does firestore has auth? yes! how to use?
+    
         System.out.println("main bottom reached");
     }
 }
